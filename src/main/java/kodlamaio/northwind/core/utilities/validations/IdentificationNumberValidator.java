@@ -5,9 +5,9 @@ import kodlamaio.northwind.core.utilities.result.Result;
 import kodlamaio.northwind.core.utilities.result.SuccesResult;
 
 public class IdentificationNumberValidator {
-public static Result valid (String identificationNumber) {
+public static Result valid (int i) {
 		
-		if(identificationNumber.isEmpty()) {
+		if(Integer.toString(i) == null) {
 			return new ErrorResult("T.C. kimlik alanı boş bırakılamaz.");
 		}
 		return new SuccesResult();
